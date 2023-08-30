@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;    
+}
+#wrapper{
+    background-color: #CBFCF8;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: solid 2px #000;
+}
+h1{
+    text-align: center;    
+    font-size: 20pt;    
+}
+h3{
+    text-align: center;    
+    font-size: 14pt;    
+}
+
+
+#participante, #opcion{
+    border: solid 2px #777;
+    padding: 5px;
+    margin: 5px 20px; 
+    text-align: center;  
+}
+#opcion img{
+    cursor: pointer;
+    text-align: center;
+    margin: 5px 5px;
+    width:150px;
+    height:150px;
+}
+#opcion img:hover{
+    border:solid 1px #CCC;
+}
+
+div.opcion{
+    width: 150px;
+    height:150px;
+    border:solid 1px #CCC;
+    margin: 0 auto;
+}
+div.opcionPiedra{
+    background-image: url('../images/piedra.png');    
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+div.opcionPapel{
+    background-image: url('../images/papel.png');    
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+div.opcionTijera{
+    background-image: url('../images/tijera.png');    
+    background-size: 70%;
+    background-repeat: no-repeat;
+    
+}
+
+
+#accion input[type=button]{
+    font-size: 14pt;
+    padding: 5px;
+    width: 250px;
+    margin: 5px auto;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#estado{
+    border: none;
+    font-size: 13pt;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+#accion{
+    border: none;
+    text-align: center;
+}
+
+#accion.ocultar{
+    display: none;
+}
+div.jugador span{
+    font-weight: bold;
+}
+.mensajeGanador{
+    text-align: center;
+    background-color: greenyellow;
+}
+.mensajePerdedor{
+    text-align: center;
+    background-color: red;
+}
+.mensajeEmpate{
+    text-align: center;
+    background-color: yellow;
+}

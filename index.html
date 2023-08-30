@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="David Yurivilca" />
+        <meta name="description" content="Juego simple de Piedra, Papel, Tijera " />
+        <meta name="keywords" content="juego,ejemplo, HTML, CSS, Javascript" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./resources/css/style.css">
+        <script src="./resources/js/main.js" ></script>
+        <script src="./resources/js/game.js" ></script>
+
+        <title>Proyecto Piedra Papel Tijera</title>
+        
+    </head>
+    <body>
+        <div id="wrapper">                
+            <form>
+            <h1>Juego PIEDRA - PAPEL - TIJERA</h1>
+
+            <div id="participante">
+                <table width="100%" cellpadding="5">
+                    <tr>
+                        <td width="50%">
+                            <div class="jugador">JUGADOR (<span id="resultadoJugador">0</span>)</div>
+                        </td>
+                        <td width="50%">
+                            <div class="jugador">MAQUINA (<span id="resultadoPC">0</span>)</div>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td width="50%">
+                            <div id="opcionJugador" class="opcion"></div>
+                        </td>
+                        <td width="50%">
+                            <div id="opcionPC" class="opcion"></div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div id="estado">
+                ELIJE UNA OPCION:
+            </div>
+            <div id="opcion">
+                <img src="./resources/images/piedra.png" alt="piedra" title="piedra" onclick="seleccionar(1);" />
+                <img src="./resources/images/papel.png" alt="papel" title="papel"    onclick="seleccionar(2);" />
+                <img src="./resources/images/tijera.png" alt="tijera" title="tijera" onclick="seleccionar(3);" />
+            </div>
+            <div id="accion">                                  
+                    <input type="button" value="Reiniciar el Juego" onclick="reiniciar()" class="button" />            
+            </div>
+            </form>            
+        </div>
+        
+    </body>
+</html>
